@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="top">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMGltYWdlfGVufDB8fDB8fHwwo"
+            alt="Portrait of the user"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <header>
+          <h2 data-testid="test-user-name">Jane Doe</h2>
+        </header>
+      </div>
+
+      <div class="content">
+        <p class="bio" data-testid="test-user-bio">
+          Frontend developer passionate about building accessible and responsive
+          web applications.
+        </p>
+
+        <p class="time" data-testid="test-user-time" aria-live="polite">
+          Time: <span id="time"></span>
+        </p>
+
+        <nav data-testid="test-user-social-links" aria-label="Social links">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Traveling</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Poor UX</li>
+            <li>Slow websites</li>
+            <li>Spaghetti code</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
